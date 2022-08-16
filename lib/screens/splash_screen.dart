@@ -38,11 +38,11 @@ class SplashScreen extends StatelessWidget {
                 ),
               ],
             ),
-            Column(
-              children: [
-                const Expanded(
-                  child: Padding(
-                    padding: EdgeInsets.all(20.0),
+            Padding(
+              padding: const EdgeInsets.only(left: 30, right: 30, top: 30, bottom: 60),
+              child: Column(
+                children: [
+                  const Expanded(
                     child: Text(
                       'Find your Gadget',
                       textAlign: TextAlign.left,
@@ -53,53 +53,39 @@ class SplashScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
-                TextButton(
-                  style: ButtonStyle(
-                    // foregroundColor:
-                    // MaterialStateProperty.all<Color>(Colors.white),
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(
-                            10,
+                  TextButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(
+                              10,
+                            ),
                           ),
                         ),
-                        // side: BorderSide(color: Colors.red),
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: const SizedBox(
+                      height: 40,
+                      width: double.infinity,
+                      child: Center(
+                        child: Text(
+                          'Get Started',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Color(0xFF5956E9),
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                  onPressed: () {},
-                  child: const Text(
-                    'Get Started',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      color: Color(0xFF5956E9),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-
-                  //   child: Padding(
-                  //     padding: const EdgeInsets.all(20.0),
-                  //     child: Container(
-                  //       color: Colors.white,
-                  //       padding: const EdgeInsets.fromLTRB(60, 10, 60, 10),
-                  //       child: const Text(
-                  //         'Get Started',
-                  //         textAlign: TextAlign.center,
-                  //         style: TextStyle(
-                  //           fontSize: 20.0,
-                  //           color: Color(0xFF5956E9),
-                  //           fontWeight: FontWeight.bold,
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
@@ -107,38 +93,3 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-// body: SafeArea(
-//         child: Column(
-//           // crossAxisAlignment: CrossAxisAlignment.center,
-// //           // mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             const 
-// //             Expanded(
-//               child: Stack(
-//                 children: const [
-//                   Image(
-//                     image: AssetImage(
-//                       'assets/images/splash-screen-saly-19.png',
-//                     ),
-//                   ),
-//                   Image(
-//                     image: AssetImage(
-//                       'assets/images/splash-screen-rectangle-4.png',
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//             ),
-//             
-//           ],
-//         ),
-//       ),
-
-
