@@ -19,5 +19,5 @@ App Design: https://www.figma.com/community/file/938370941255119298
 | 11 | Checkout | | |
 | 12 | Basket | | |
 | 13 | Login | | |
-| 14 | Splash | | |
+| 14 | Splash | DONE | 16-Aug-2022 |
 
