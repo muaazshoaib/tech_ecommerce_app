@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tech_ecommerce_app/screens/login_screen.dart';
 import 'package:tech_ecommerce_app/screens/splash_screen.dart';
 
 void main() {
@@ -10,16 +11,10 @@ class EcommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tech Ecommerce App',
-      theme: ThemeData(
-        // // backgroundColor: kBackgroundColor,
-        // primaryColor: kBackgroundColor,
-        // brightness: Brightness.light,
-        fontFamily: 'Raleway',
-      ),
-      home: const SplashScreen(),
+      home: LoginScreen(),
     );
   }
 }

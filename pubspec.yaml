@@ -28,6 +28,14 @@ flutter:
     - assets/images/
 
   fonts:
-    - family: Raleway
+    - family: Raleway ExtraBold
       fonts:
         - asset: assets/fonts/raleway.extrabold.ttf
+
+    - family: Raleway Bold
+      fonts:
+        - asset: assets/fonts/raleway.bold.ttf        
+
+    - family: Raleway SemiBold
+      fonts:
+        - asset: assets/fonts/raleway.semibold.ttf

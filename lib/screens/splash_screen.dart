@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tech_ecommerce_app/colors.dart';
+import 'package:tech_ecommerce_app/components/splash_screen_background_design.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -11,74 +12,52 @@ class SplashScreen extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Stack(
-              children: [
-                Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image:
-                          AssetImage("assets/images/splash-screen-saly-19.png"),
-                      fit: BoxFit.fitWidth,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(
-                    top: 450,
-                  ),
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                            "assets/images/splash-screen-rectangle-4.png"),
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            const SplashScreenBackgroundDesign(),
             Padding(
-              padding: const EdgeInsets.only(left: 30, right: 30, top: 30, bottom: 60),
+              padding: const EdgeInsets.all(20.0),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Expanded(
+                  const Flexible(
                     child: Text(
                       'Find your Gadget',
                       textAlign: TextAlign.left,
                       style: TextStyle(
                         fontSize: 65.0,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Raleway ExtraBold',
                       ),
                     ),
                   ),
-                  TextButton(
-                    style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all<Color>(Colors.white),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(
-                              10,
+                  Flexible(
+                    child: TextButton(
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(
+                                10,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                    onPressed: () {},
-                    child: const SizedBox(
-                      height: 40,
-                      width: double.infinity,
-                      child: Center(
-                        child: Text(
-                          'Get Started',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            color: Color(0xFF5956E9),
-                            fontWeight: FontWeight.bold,
+                      onPressed: () {},
+                      child: const SizedBox(
+                        height: 40,
+                        width: double.infinity,
+                        child: Center(
+                          child: Text(
+                            'Get Started',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Color(0xFF5956E9),
+                              fontFamily: 'Raleway Bold',
+                            ),
                           ),
                         ),
                       ),
