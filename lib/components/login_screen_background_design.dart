@@ -28,7 +28,7 @@ class LoginScreenBackgroundDesign extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 120,
+                height: 115,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,

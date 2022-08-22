@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_ecommerce_app/colors.dart';
 import 'package:tech_ecommerce_app/components/splash_screen_background_design.dart';
+import 'package:tech_ecommerce_app/components/title_heading_in_app_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -18,17 +19,7 @@ class SplashScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Flexible(
-                    child: Text(
-                      'Find your Gadget',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontSize: 65.0,
-                        color: Colors.white,
-                        fontFamily: 'Raleway ExtraBold',
-                      ),
-                    ),
-                  ),
+                  const TitleHeadingInAppScreen(titleText: 'Find your Gadget', titleColor: Colors.white,),
                   Flexible(
                     child: TextButton(
                       style: ButtonStyle(
