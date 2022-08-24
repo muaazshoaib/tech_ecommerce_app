@@ -9,7 +9,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBackgroundColor,
+      backgroundColor: kBlueColor,
       body: SafeArea(
         child: Stack(
           children: [
@@ -47,42 +47,83 @@ class LoginScreen extends StatelessWidget {
                             'Login',
                             style: TextStyle(
                               fontFamily: 'Raleway Bold',
-                              fontSize: 20,
+                              fontSize: 18,
                             ),
                           ),
+                          const SizedBox(
+                            height: 10,
+                          ),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Column(
                                 children: [
                                   Row(
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.email,
+                                        color: kGreyColor,
                                       ),
-                                      Text('Email')
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        'Email',
+                                        style: TextStyle(
+                                            color: kGreyColor,
+                                            fontSize: 15,
+                                            fontFamily: 'Raleway SemiBold'),
+                                      ),
                                     ],
                                   ),
-                                  const TextField(),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  const TextField(
+                                    keyboardType: TextInputType.emailAddress,
+                                  ),
                                 ],
+                              ),
+                              const SizedBox(
+                                height: 10,
                               ),
                               Column(
                                 children: [
                                   Row(
-                                    children: const [
+                                    children: [
                                       Icon(
                                         Icons.lock,
+                                        color: kGreyColor,
                                       ),
-                                      Text('Password')
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        'Password',
+                                        style: TextStyle(
+                                            color: kGreyColor,
+                                            fontSize: 15,
+                                            fontFamily: 'Raleway SemiBold'),
+                                      ),
                                     ],
                                   ),
-                                  const TextField(),
+                                  const TextField(
+                                    obscureText: true,
+                                    keyboardType: TextInputType.visiblePassword,
+                                  ),
                                 ],
+                              ),
+                              const SizedBox(
+                                height: 10,
                               ),
                               TextButton(
                                 onPressed: () {},
                                 child: const Text(
                                   'Forgot password?',
                                 ),
+                              ),
+                              const SizedBox(
+                                height: 20,
                               ),
                               TextButton(
                                 style: ButtonStyle(
@@ -117,9 +158,14 @@ class LoginScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              TextButton(
-                                onPressed: () {},
-                                child: const Text('Create Accout'),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Center(
+                                child: TextButton(
+                                  onPressed: () {}, 
+                                  child: const Text('Create Account'),
+                                ),
                               ),
                             ],
                           ),

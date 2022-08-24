@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tech_ecommerce_app/screens/login_screen.dart';
-// import 'package:tech_ecommerce_app/screens/splash_screen.dart';
+import 'package:tech_ecommerce_app/screens/splash_screen.dart';
 
 void main() {
   runApp(const EcommerceApp());
@@ -14,8 +13,7 @@ class EcommerceApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tech Ecommerce App',
-      home: LoginScreen(),
-      // home: SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }
