@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_ecommerce_app/colors.dart';
 import 'package:tech_ecommerce_app/components/login_screen_background_design.dart';
 import 'package:tech_ecommerce_app/components/title_heading_in_app_screen.dart';
+import 'package:tech_ecommerce_app/screens/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -141,7 +142,14 @@ class LoginScreen extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const HomeScreen(),
+                                    ),
+                                  );
+                                },
                                 child: const SizedBox(
                                   height: 40,
                                   width: double.infinity,
@@ -163,7 +171,7 @@ class LoginScreen extends StatelessWidget {
                               ),
                               Center(
                                 child: TextButton(
-                                  onPressed: () {}, 
+                                  onPressed: () {},
                                   child: const Text('Create Account'),
                                 ),
                               ),
