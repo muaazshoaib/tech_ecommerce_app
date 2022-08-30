@@ -18,6 +18,6 @@ App Design: https://www.figma.com/community/file/938370941255119298
 | 10 | History | | |
 | 11 | Checkout | | |
 | 12 | Basket | | |
-| 13 | Login | | |
+| 13 | Login | DONE | 24-Aug-2022 |
 | 14 | Splash | DONE | 16-Aug-2022 |
 
