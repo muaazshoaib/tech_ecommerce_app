@@ -5,16 +5,16 @@ import 'package:tech_ecommerce_app/screens/favorites_screen.dart';
 import 'package:tech_ecommerce_app/screens/home_screen.dart';
 import 'package:tech_ecommerce_app/screens/profile_screen.dart';
 
-class SupportingScreenForBottomNavigationbar extends StatefulWidget {
-  const SupportingScreenForBottomNavigationbar({Key? key}) : super(key: key);
+class SupportingScreenForBottomNavigationBar extends StatefulWidget {
+  const SupportingScreenForBottomNavigationBar({Key? key}) : super(key: key);
 
   @override
-  State<SupportingScreenForBottomNavigationbar> createState() =>
-      _SupportingScreenForBottomNavigationbarState();
+  State<SupportingScreenForBottomNavigationBar> createState() =>
+      _SupportingScreenForBottomNavigationBarState();
 }
 
-class _SupportingScreenForBottomNavigationbarState
-    extends State<SupportingScreenForBottomNavigationbar> {
+class _SupportingScreenForBottomNavigationBarState
+    extends State<SupportingScreenForBottomNavigationBar> {
   int _selectedIndexInBottomNavigationBar = 0;
 
   static const List _screensList = [

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_ecommerce_app/colors.dart';
 import 'package:tech_ecommerce_app/components/login_screen_background_design.dart';
 import 'package:tech_ecommerce_app/components/title_heading_in_app_screen.dart';
-import 'package:tech_ecommerce_app/screens/home_screen.dart';
+import 'package:tech_ecommerce_app/screens/supporting_screens/supporting_screen_for_bottom_navigation_bar.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -146,7 +146,8 @@ class LoginScreen extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => const HomeScreen(),
+                                      builder: (context) =>
+                                          const SupportingScreenForBottomNavigationBar(),
                                     ),
                                   );
                                 },
